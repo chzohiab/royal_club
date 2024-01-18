@@ -9,7 +9,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h1>Step into the Arena: Every Inning, an Unseen Adventure</h1>
-                <p>A Rollercoaster of Surprises Awaits in Every Inning – Your Adventure Begins Here.</p>
+                <p>A Rollercoaster of Surprises Awaits in Every Inning Your Adventure Begins Here.</p>
                 <a href="" class="watch-video">
                     <div class="icon">
                         <i class="fas fa-play"></i>
