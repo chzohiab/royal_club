@@ -1,0 +1,149 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 7px 0 60px rgba(0, 0, 0, .05);
+    background: #fff;
+    z-index: 11;
+    overflow: hidden;
+    min-width: 280px;
+    padding-top: 60px;
+    position: relative;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background: url('../../images/sidebarbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .sidebar-bg {
+        background-image: linear-gradient(to right, #141e30, #243b55);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.06;
+        }
+    }
+
+    .side-menu {
+        padding: 1.5rem 1.5rem;
+        position: relative;
+        z-index: 11;
+
+        h5 {
+            text-transform: uppercase;
+            font-size: .8rem;
+            margin: 0.75rem 0;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .6);
+            white-space: nowrap;
+            position: relative;
+        }
+
+        ul.menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 8px;
+            li.nav-item {
+                a.nav-link {
+                    transition: transform .2s, height 300ms, color 300ms, background-color 300ms, -webkit-transform .2s;
+                    display: block;
+                    line-height: 2.5rem;
+                    height: 2.5rem;
+                    padding: 0 1.5rem 0 45px;
+                    position: relative;
+                    border-radius: 0.25rem;
+                    color: rgba(255, 255, 255, .7);
+                    white-space: nowrap;
+
+                    .icon {
+                        text-align: center;
+                        width: 34px;
+                        height: 34px;
+                        line-height: 34px;
+                        position: absolute;
+                        left: 5px;
+                        top: 50%;
+                        margin-top: -17px;
+                        font-size: 1rem;
+                    }
+
+                    &:hover {
+                        color: #fbfbfb;
+                        background: rgba(255, 255, 255, .1);
+                        span{
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                a.nav-link.active {
+                    color: #fbfbfb;
+                    background: rgba(255, 255, 255, .1);
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.topbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    z-index: 12;
+    background: linear-gradient(to top, #141e30, #243b55);
+    box-shadow: 0 0.46875rem 2.1875rem rgba(0, 0, 0, .03), 0 0.9375rem 1.40625rem rgba(0, 0, 0, .03), 0 0.25rem 0.53125rem rgba(0, 0, 0, .05), 0 0.125rem 0.1875rem rgba(0, 0, 0, .03);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+
+    .topbar-left {
+        h2 {
+            font-size: 24px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #fbfbfb;
+        }
+    }
+
+    .topbar-right {
+        .topbar-menu {
+            display: flex;
+            align-items: center;
+
+                .dropdown-toggle {
+                    color: #fbfbfb;
+                }
+        }
+    }
+}
+
+.main-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 300px;
+    padding-top: 80px;
+    padding-right: 20px;
+}

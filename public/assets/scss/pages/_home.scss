@@ -1,0 +1,71 @@
+.rc-banner {
+    position: relative;
+    background: radial-gradient(690.87% 145.6% at 17.03% 29.86%, #B4FFB2 1.84%, #58B97F 34.31%, #054949 100%);
+    background-position: right;
+    width: 100%;
+    padding: 120px 0 100px;
+
+    .banner-bg {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        color: #212627;
+        font-size: 52px;
+        font-weight: 700;
+    }
+
+    p {
+        color: #212627;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .watch-video {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.5s ease;
+        color: #212627;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.32px;
+        
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            color: #054949;
+            background: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+        }
+        &:hover{
+
+            .icon{
+                color: #fbfbfb;
+                background: #054949;
+            }
+        }
+    }
+
+    .banner-img {
+        img {
+            width: 100%;
+        }
+    }
+}
