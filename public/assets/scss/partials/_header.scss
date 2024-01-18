@@ -1,0 +1,44 @@
+.rc-header {
+    padding: 8px 0;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+
+
+    .rc-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 54px;
+
+        .rc-logo {
+            a {
+                img {
+                    width: 65%;
+                }
+            }
+        }
+
+        .rc-nav {
+            .rc-menu {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+
+                .rc-nav-item {
+                    .rc-nav-link {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #212627;
+                        text-transform: uppercase;
+                        letter-spacing: 0.32px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+    }
+}

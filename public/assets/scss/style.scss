@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import './base/body';
+@import './base/button';
+@import './base/form';
+
+@import './partials/layout';
+@import './partials/header';
+
+@import './pages/home';
+
+
+body{
+    background: #fff;
+}

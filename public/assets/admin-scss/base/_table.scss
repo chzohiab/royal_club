@@ -1,0 +1,25 @@
+.table-responsive{
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    .rc-table{
+        width: 100%;
+        thead{
+            tr{
+                th{
+                    padding: .55rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                &:nth-of-type(odd){
+                    background: rgba(0,0,0,.03);
+                }
+                td{
+                    padding: .55rem;
+                }
+            }
+        }
+    }
+}
