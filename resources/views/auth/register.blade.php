@@ -6,7 +6,8 @@
             <div class="card p-4" style="width:500px">
                 <h4 class="text-center mb-4">Register</h4>
 
-                <form method="POST" action="">
+                <form method="POST" action="{{ route('signup.submit') }}">
+                    @csrf
 
                     <!-- Name -->
                     <div class="form-group">

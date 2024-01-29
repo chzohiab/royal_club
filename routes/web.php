@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,23 +17,27 @@ use Illuminate\Support\Facades\Route;
 ////////////////Default Open/////////////////////
 Route::get('/', function () {
     return view('user.pages.home');
-});
+})->name('home');
+
 ////////////////User auth////////////////////////
 
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('auth.login');
+// Example
+Route::get('user/login', [AuthController::class, 'userlogin'])->name('auth.login');
 
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('auth.register');
+Route::post('user/login', [AuthController::class, 'loginValidate'])->name('login.submit');
 
-////////////////Admin auth////////////////////////
 
-Route::get('/admin/login', function () {
-    return view('adminauth.login');
-})->name('adminauth.login');
 
+Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('signup.form');
+
+Route::post('/register', [AuthController::class, 'register'])->name('signup.submit');
+
+
+
+// ...
+
+Route::get('adminauth/login', [AuthController::class, 'adminlogin'])->name('adminauth.login');
+Route::post('adminauth/login', [AuthController::class, 'adminloginValidate'])->name('login.submit');
 Route::get('/admin/dashboard', function () {
     return view('admin.pages.dashboard.dashboard');
 })->name('admin.pages.dashboard.dashboard');

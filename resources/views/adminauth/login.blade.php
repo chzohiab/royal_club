@@ -5,8 +5,9 @@
         <div class="auth-wrapper d-flex align-items-center justify-content-center" style="height:100vh;">
             <div class="card p-4" style="width:500px">
                 <h4 class="text-center mb-4"> Admin Login</h4>
+                <form method="POST" action="{{ route('login.submit') }}">
+                    @csrf
 
-                <form method="POST" action="">
 
                     <!-- Email Address -->
                     <div class="form-group">
